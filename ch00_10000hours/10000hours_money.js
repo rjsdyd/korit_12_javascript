@@ -22,8 +22,8 @@ function calculator() {
         alert('입력되지 않았습니다.');
         timeValue.focus();
         return false;
-    } else if (timeValue_int > 10000) {
-        alert('잘못된 값입니다. 10000이하의 값을 입력해 주세요.');
+    } else if (timeValue_int > 10000000) {
+        alert('잘못된 값입니다.');
         return false;
     }
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body bgcolor="gray">
+  <h1>API</h1>
+  <script>
+    // Get / Read : 읽어오기 / id가 1인 데이터 조회
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then(response => response.json())
+    /* 
+    .then(function(response) {
+      return response.json();
+    })
+    */
+    .then((json) => console.log(json.body))
+
+    // Post / Create : 데이터 생성
+    // 데이터가 없기에 고유값이 없음.
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+      method: "POST",   // http request 요청 방법
+      body: JSON.stringify({
+        title: '최애의 아이돌',
+        body: 'QWER',
+        userId: 1,
+      }),
+      headers: {
+        "content-type": "application/json; charset = UTF-8"
+      },
+    })  
+    .then(response => response.json())
+    .then((json) => console.log(json))
+
+    // Put / Update : 데이터 수정
+    fetch("https://jsonplaceholder.typicode.com/posts/1", {
+      method : 'PUT',
+      body: JSON.stringify({
+        id: 1,
+        title: "이거 다음에는 promise 타입 학습",
+        body: '그거하면 아마도 자습일것',
+        userId:1
+      }),
+      headers: {
+        'Content-type' : 'application/json; charset=UTF-8',
+      }
+    }) 
+    .then(response => response.json())
+    .then((json) => console.log(json))
+
+    // Delete - 삭제
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+      method: "DELETE",
+    })
+    // 근데 삭제는 확인할 수 없어 다시 read
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then(response => response.json())
+    .then((json) => console.log(json.body))
+    // 그러니까 삭제 후에는 todolist 기준으로 renderTodo를 새로 해야함.
+    // C / R / U / D 뒤에는 -> 새로 R을 해야한다고 알고 있겠음.
+  </script>
+</body>
+</html>

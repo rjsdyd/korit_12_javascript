@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My ShoppingList</title>
+  <link rel="stylesheet" href="./01_shoppinglist.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <div class="main-layout">
+    <div class="shopping-card">
+      <h1>장바구니</h1>
+      <div class="input-group">
+        <input id="shopping-input" type="text" placeholder="구매 목록">
+        <input id="price-input" type="number" placeholder="가격">
+        <button id="add-btn">추가</button>
+      </div>
+      <ul id="shopping-list"></ul>
+    </div>
+    <div class="summary-card">
+      <h2>총 지출 금액</h2>
+      <div class="total-price-box">
+        <span id="total-price">0</span>원
+      </div>
+    </div>
+  </div>  
+</div>
+  <script src="./01_shoppinglist.js"></script>
+</body>
+</html>
