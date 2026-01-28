@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(225, 225, 225);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  /* border: 1px solid black; */
+  background-color: white;
+  width: 500px;
+  /* height: */
+  border-radius: 20px;
+}
+
+.head {
+  padding: 12px;
+  background-color: green;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.head h1 {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* background-color: blue; */
+}
+.id {
+  width: 400px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+  border: 1px solid #a7a7a7;
+}
+.pw {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+  border: 1px solid #a7a7a7;
+}
+
+.btn {
+  /* background-color: aqua; */
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.btn_btn {
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: green;
+  border: 0px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.btn_btn:hover {
+  background-color: darkgreen;
+}
+.btn_btn a {
+  color: white;
+  text-decoration: none;
+}
+p a{
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  color:#a7a7a7;
+  font-size: 0.6em;
+  text-decoration: none;
+}
+p a:hover {
+  color: darkgreen;
+  font-weight: bold;
+}
