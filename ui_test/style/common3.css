@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'nexon';
+  src: url('../resource/font/NEXONLv1GothicRegular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'nexon';
+}
+#section {
+  height: 100%;
+}
+.nexon {
+  position: fixed;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, 0);
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.logo img {
+  width: 300px;
+  height: 100px;
+  margin-top: 125px;
+  margin-bottom: -25px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #a7a7a7;
+  gap: 15px;
+}
+.nav a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: rgb(120, 120, 120);
+  padding: 8px;
+}
+.nav a:nth-child(3) {
+  font-weight: 600;
+  color: black;
+  border-bottom: 2px solid black ;
+}
+.nav a:hover {
+  color:black;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  transition: all 0.03s ease; 
+}
+.nav_info {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; 
+  margin-bottom: 40px;
+}
+.nav_p {
+  font-size: 0.8rem;
+  color:#a7a7a7
+}
+
+.nav_p span {
+  font-weight: 700;
+}
+
+.input_id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.input_id img {
+  width: 150px;
+  height: 150px;
+}
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.time p {
+  color: #a7a7a7;
+  font-size: 0.8rem;
+}
+
+.info {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #a7a7a7;
+  padding-top: 20px;
+  font-size: 0.7rem;
+}
+
+.info p {
+  margin-bottom: 5px;
+  color:#a7a7a7;
+}
+.info p:first-child {
+  color:black;
+  font-weight: 500;
+}
+.qrinfo {
+  text-decoration: none;
+  color: blue;
+}
+.info_head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.info_head a {
+  color: #a7a7a7;
+  font-weight: 500;
+  text-decoration: none;
+}
+.info_head a:hover {
+  transition: all 0.2s ease;
+  color: blue;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100px;
+  color:#a7a7a7;
+  font-size: 0.7rem;
+  padding-bottom: 20px;
+}
